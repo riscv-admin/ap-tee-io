@@ -1,5 +1,8 @@
 # RISC-V AP-TEE-IO TG Charter 
 
+Chair: Samuel Ortiz (Rivos Inc.)
+Vice-chair: Jiewen Yao (Intel)
+
 In order to achieve high performance Input/Output (I/O) operations, Trusted Execution Environment Virtual Machines (TVM) must extend their trust boundary to include a composition of directly assigned, TEE-I/O-capable devices/functions. Without this ability, TVMs have to resort to using para-virtualized I/O using non-confidential memory regions, which has performance impacts due to memory copies and negates use of accelerators used for dense compute. This TG will define AP-TEE-IO ABI extensions to provide Confidential VM-assigned devices with secure direct access to confidential memory as well as MMIO, removing the dependence on para-virtualized I/O.
 
 The AP-TEE-IO TG will work on the following deliverables; where applicable, the ABI extensions are expected to extend the AP-TEE TEE-Host/TEE-Guest ABIs:
